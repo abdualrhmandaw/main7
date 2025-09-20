@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* نظام التصميم الفاخر للوحات الإعلانية - ذهبي وأسود */
+
+@layer base {
+  :root {
+    /* خلفيات أساسية */
+    --background: 0 0% 8%;
+    --foreground: 45 93% 80%;
+
+    /* البطاقات والعناصر */
+    --card: 0 0% 12%;
+    --card-foreground: 45 93% 85%;
+
+    /* النوافذ المنبثقة */
+    --popover: 0 0% 10%;
+    --popover-foreground: 45 93% 85%;
+
+    /* الألوان الأساسية - ذهبي فاخر */
+    --primary: 45 93% 58%;
+    --primary-foreground: 0 0% 8%;
+    --primary-glow: 45 100% 68%;
+
+    /* الألوان الثانوية - ذهبي داكن */
+    --secondary: 42 87% 25%;
+    --secondary-foreground: 45 93% 85%;
+
+    /* الألوان المكتومة */
+    --muted: 0 0% 18%;
+    --muted-foreground: 45 30% 65%;
+
+    /* ألوان التأكيد */
+    --accent: 45 93% 58%;
+    --accent-foreground: 0 0% 8%;
+
+    /* ألوان التحذير */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 45 93% 95%;
+
+    /* الحدود والمدخلات */
+    --border: 42 20% 25%;
+    --input: 42 20% 22%;
+    --ring: 45 93% 58%;
+
+    --radius: 0.75rem;
+
+    /* Gradients فاخرة */
+    --gradient-primary: linear-gradient(135deg, hsl(45 93% 58%), hsl(45 100% 68%));
+    --gradient-secondary: linear-gradient(135deg, hsl(42 87% 25%), hsl(45 93% 58%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 15%));
+    --gradient-luxury: linear-gradient(135deg, hsl(0 0% 8%) 0%, hsl(42 87% 25%) 50%, hsl(45 93% 58%) 100%);
+    
+    /* ظلال فاخرة */
+    --shadow-gold: 0 10px 30px -5px hsl(45 93% 58% / 0.3);
+    --shadow-luxury: 0 20px 60px -10px hsl(45 93% 58% / 0.4);
+    --shadow-card: 0 8px 25px -5px hsl(0 0% 0% / 0.6);
+    
+    /* انتقالات ناعمة */
+    --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s ease-in-out;
+
+    /* ظلال أخرى */
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 45 30% 65%;
+    --sidebar-primary: 45 93% 58%;
+    --sidebar-primary-foreground: 0 0% 8%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 45 93% 85%;
+    --sidebar-border: 42 20% 25%;
+    --sidebar-ring: 45 93% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
